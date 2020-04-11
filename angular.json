@@ -62,11 +62,13 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "monamo-under-construction:build"
+            "browserTarget": "monamo-under-construction:build",
+            "ssl": true
           },
           "configurations": {
             "production": {
-              "browserTarget": "monamo-under-construction:build:production"
+              "browserTarget": "monamo-under-construction:build:production",
+              "ssl": true
             }
           }
         },
