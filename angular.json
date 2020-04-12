@@ -63,12 +63,16 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
             "browserTarget": "monamo-under-construction:build",
-            "ssl": true
+            "ssl": true,
+            "sslCert": "./ssl/server.crt",
+            "sslKey": "./ssl/server.key"
           },
           "configurations": {
             "production": {
               "browserTarget": "monamo-under-construction:build:production",
-              "ssl": true
+              "ssl": true,
+              "sslCert": "./ssl/server.crt",
+              "sslKey": "./ssl/server.key"
             }
           }
         },
